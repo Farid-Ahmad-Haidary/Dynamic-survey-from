@@ -42,8 +42,8 @@ include 'connection.php';
         <td><?php echo $details['first_name'] ?></td>
         <td><?php echo $details['last_name'] ?></td>
         <td><?php echo $details['salary'] ?></td>
-        <td><a href=""></a></td>
-        <td><a href=""></a></td>
+        <td><a href="delate.php?id=<?php echo $details['id']; ?>"><i class="fas fa-trash" style="color: red;"></i></a></td>
+        <td><a href="edit.php?id=<?php echo $details['id']; ?>"><i class="fas fa-pen-to-square" style="color: green; font-size: 20px;"></i></a></td>
       </tr>
       <?php 
       }
